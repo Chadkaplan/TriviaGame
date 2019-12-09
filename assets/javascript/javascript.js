@@ -79,7 +79,8 @@ $(document).ready(function () {
     var game = {
         questions: questions,
         counter: countStartNumber,
-        currentQuestion: 0,
+        currentQuestion: 1
+        ,
         correct: 0,
         incorrect: 0,
 
@@ -101,7 +102,7 @@ $(document).ready(function () {
             timer = setInterval(game.countdown, 1000);
             // add question dynamically
             card.html(
-                "<h2>" + "Question: " + game.currentQuestion + 1 + "</h2>" +
+                "<h2>" + "Question: " + game.currentQuestion + "</h2>" +
                 "<br>" +
                 "<h2>" + questions[this.currentQuestion].question + "</h2>");
             // for loop to go through questions
